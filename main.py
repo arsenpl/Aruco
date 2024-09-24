@@ -27,7 +27,7 @@ def read_images(dir_path):
 aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_50)
 
 param_markers = aruco.DetectorParameters()
-cap = cv.VideoCapture("http://192.168.0.19:8080/video")
+cap = cv.VideoCapture("http:///video")
 img_list=read_images("elements")
 while True:
     ret, frame= cap.read()
